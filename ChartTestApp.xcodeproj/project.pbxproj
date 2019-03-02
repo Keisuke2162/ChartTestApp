@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		517279DBAD8C9D78D6D2BD68 /* Pods_ChartTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9BA60CA36C628205B6D7B5F /* Pods_ChartTestApp.framework */; };
 		E7D6DEDC222A6B750051F438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D6DEDB222A6B750051F438 /* AppDelegate.swift */; };
 		E7D6DEDE222A6B750051F438 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D6DEDD222A6B750051F438 /* ViewController.swift */; };
 		E7D6DEE1222A6B750051F438 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7D6DEDF222A6B750051F438 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09D6E546DE1E98FCE16CF02A /* Pods-ChartTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartTestApp.debug.xcconfig"; path = "Target Support Files/Pods-ChartTestApp/Pods-ChartTestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C9BA60CA36C628205B6D7B5F /* Pods_ChartTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F387FA4EE4DB3F5AF2B060 /* Pods-ChartTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartTestApp.release.xcconfig"; path = "Target Support Files/Pods-ChartTestApp/Pods-ChartTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		E7D6DED8222A6B750051F438 /* ChartTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D6DEDB222A6B750051F438 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7D6DEDD222A6B750051F438 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				517279DBAD8C9D78D6D2BD68 /* Pods_ChartTestApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		705DA5571E72BD0975848827 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09D6E546DE1E98FCE16CF02A /* Pods-ChartTestApp.debug.xcconfig */,
+				D0F387FA4EE4DB3F5AF2B060 /* Pods-ChartTestApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B0005F437C90F0D6DF8B37F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9BA60CA36C628205B6D7B5F /* Pods_ChartTestApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E7D6DECF222A6B750051F438 = {
 			isa = PBXGroup;
 			children = (
 				E7D6DEDA222A6B750051F438 /* ChartTestApp */,
 				E7D6DED9222A6B750051F438 /* Products */,
+				705DA5571E72BD0975848827 /* Pods */,
+				B0005F437C90F0D6DF8B37F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7D6DEEA222A6B750051F438 /* Build configuration list for PBXNativeTarget "ChartTestApp" */;
 			buildPhases = (
+				93B4282359A69E745B9F68B5 /* [CP] Check Pods Manifest.lock */,
 				E7D6DED4222A6B750051F438 /* Sources */,
 				E7D6DED5222A6B750051F438 /* Frameworks */,
 				E7D6DED6222A6B750051F438 /* Resources */,
+				5629EF3CE712F8126056C60C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5629EF3CE712F8126056C60C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChartTestApp/Pods-ChartTestApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChartTestApp/Pods-ChartTestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93B4282359A69E745B9F68B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChartTestApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E7D6DED4222A6B750051F438 /* Sources */ = {
@@ -280,6 +354,7 @@
 		};
 		E7D6DEEB222A6B750051F438 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09D6E546DE1E98FCE16CF02A /* Pods-ChartTestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +373,7 @@
 		};
 		E7D6DEEC222A6B750051F438 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0F387FA4EE4DB3F5AF2B060 /* Pods-ChartTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
