@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         //chartのデータにcombinedData（グラフデータ）を挿入する
         chart.data = combinedData
         
-        //chartを出力する
+        //chartを出力するよ
         self.view.addSubview(chart)
         
     }
